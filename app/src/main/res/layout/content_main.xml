@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <soup.neumorphism.NeumorphCardView
+        android:layout_width="match_parent"
+        style="@style/Widget.Neumorph.CardView"
+        app:neumorph_shapeType="pressed"
+        app:neumorph_lightSource="rightBottom"
+        android:layout_height="250dp">
+    <soup.neumorphism.NeumorphTextView
+        android:id="@+id/tvInput"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:background="#efefef"
+        android:ems="10"
+        android:gravity="right|center_vertical|bottom"
+        android:maxLength="12"
+        android:padding="10dp"
+        android:textSize="48sp" />
+    </soup.neumorphism.NeumorphCardView>
+
+    <LinearLayout
+        android:id="@+id/llOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <soup.neumorphism.NeumorphButton
+            android:id="@+id/btnSeven"
+            style="@style/Widget.Neumorph.Button"
+            android:layout_width="0dp"
+            app:neumorph_shapeType="pressed"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onDigit"
+            android:text="7" />
+
+        <soup.neumorphism.NeumorphButton
+            android:id="@+id/btnEight"
+            style="@style/Widget.Neumorph.Button"
+            app:neumorph_shapeType="pressed"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onDigit"
+            android:text="8" />
+
+        <soup.neumorphism.NeumorphButton
+            android:id="@+id/btnNine"
+            style="@style/Widget.Neumorph.Button"
+            app:neumorph_shapeType="pressed"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onDigit"
+            android:text="9" />
+
+        <soup.neumorphism.NeumorphButton
+            android:id="@+id/btnDivide"
+            style="@style/Widget.Neumorph.Button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onOperator"
+            android:text="/" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <soup.neumorphism.NeumorphButton
+            android:id="@+id/btnFour"
+            style="@style/Widget.Neumorph.Button"
+            app:neumorph_shapeType="pressed"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onDigit"
+            android:text="4" />
+
+        <soup.neumorphism.NeumorphButton
+            android:id="@+id/btnFive"
+            style="@style/Widget.Neumorph.Button"
+            app:neumorph_shapeType="pressed"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onDigit"
+            android:text="5" />
+
+        <soup.neumorphism.NeumorphButton
+            android:id="@+id/btnSix"
+            style="@style/Widget.Neumorph.Button"
+            app:neumorph_shapeType="pressed"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onDigit"
+            android:text="6" />
+
+        <soup.neumorphism.NeumorphButton
+            android:id="@+id/btnMultiply"
+            style="@style/Widget.Neumorph.Button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onOperator"
+            android:text="*" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llThree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <soup.neumorphism.NeumorphButton
+            android:id="@+id/btnOne"
+            style="@style/Widget.Neumorph.Button"
+            app:neumorph_shapeType="pressed"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onDigit"
+            android:text="1" />
+
+        <soup.neumorphism.NeumorphButton
+            android:id="@+id/btnTwo"
+            style="@style/Widget.Neumorph.Button"
+            app:neumorph_shapeType="pressed"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onDigit"
+            android:text="2" />
+
+        <soup.neumorphism.NeumorphButton
+            android:id="@+id/btnThree"
+            style="@style/Widget.Neumorph.Button"
+            app:neumorph_shapeType="pressed"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onDigit"
+            android:text="3" />
+
+        <soup.neumorphism.NeumorphButton
+            android:id="@+id/btnSubtract"
+            style="@style/Widget.Neumorph.Button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onOperator"
+            android:text="-" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llFour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnDecimal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onDecimalPoint"
+            android:text="."
+            android:visibility="gone" />
+
+        <soup.neumorphism.NeumorphButton
+            android:id="@+id/btnZero"
+            style="@style/Widget.Neumorph.Button"
+            app:neumorph_shapeType="pressed"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:onClick="onDigit"
+            android:text="0" />
+
+        <soup.neumorphism.NeumorphButton
+            android:id="@+id/btnClear"
+            style="@style/Widget.Neumorph.Button"
+            app:neumorph_shapeType="pressed"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClear"
+            android:text="CLR" />
+
+        <soup.neumorphism.NeumorphButton
+            android:id="@+id/btnAdd"
+            style="@style/Widget.Neumorph.Button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onOperator"
+            android:text="+" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llFive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <soup.neumorphism.NeumorphButton
+            android:id="@+id/btnEqual"
+            style="@style/Widget.Neumorph.Button"
+            app:neumorph_shapeType="pressed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="onEqual"
+            android:text="=" />
+    </LinearLayout>
+
+</LinearLayout>
