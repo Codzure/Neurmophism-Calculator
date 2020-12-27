@@ -233,6 +233,7 @@
             android:layout_height="match_parent"
             android:onClick="onEqual"
             android:text="=" />
+
     </LinearLayout>
 
 </LinearLayout>
